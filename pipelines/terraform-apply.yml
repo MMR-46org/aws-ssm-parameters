@@ -26,5 +26,3 @@ pipelines:
                 - exec:
                     command: terraform
                     arguments: [ "apply", "-auto-approve"]
-
-
