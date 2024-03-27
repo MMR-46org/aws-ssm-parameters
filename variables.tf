@@ -4,8 +4,8 @@ variable "parameters" {
     "dev.expense.rds.endpoint" = "dev-expense-rds.c9mm2yy6w31y.us-east-1.rds.amazonaws.com"
     "dev.expense.frontend.backend_endpoint" = "https://backend-dev.madhanmohanreddy.tech/"
     "newrelic.account"                      =  "4386084"
-    "dev.expense.frontend.app_version"      = "1.0.1"
-    "dev.expense.backend.app_version"       = "1.0.1"
+    "dev.expense.frontend.app_version"      = "1.0.2"
+    "dev.expense.backend.app_version"       = "1.0.2"
   }
 }
 
