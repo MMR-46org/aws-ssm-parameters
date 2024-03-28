@@ -17,7 +17,7 @@ variable "secrets"   {
     "ssh.password"                =   "DevOps321"
     "ses.username"                =  "AKIAXOXBBZOL3KPKZQBJ"
     "ses.password"                =  "BNEc648EBgiJVcjDjB4JXGXaL7uat1UESyA3SGyQTfAK"
-    "grafana.apikey"              =  "glsa_GIj0PXo5I8HWvOSQlpDTaidDY7jUP9Gj_fbe01e4e"
+    "grafana.apikey"              =  "glsa_GIPMtSW8ZJNKOsnut5sMNHFwyQIzZwJG_3383837e"
     "dev.expense.frontend.newrelic.key"     = "NRAK-2Z4IYJ6UG5KLCWP5A1XA20BXDFX"
     "dev.expense.backend.newrelic.key"     = "6d48d900c4eee01b47129d649f4481aaFFFFNRAL"
     "elasticsearch.password"              =  "DlY2=01lPJTKWNzGaGDT"
