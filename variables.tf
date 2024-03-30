@@ -34,7 +34,7 @@ variable "secrets"   {
 
 
 
-    "prod.expense.rds.password"  =   "ExpenseApp123"
+    "prod.expense.rds.password"              =   "ExpenseApp123"
     "prod.expense.frontend.newrelic.key"     = "NRAK-2Z4IYJ6UG5KLCWP5A1XA20BXDFX"
     "prod.expense.backend.newrelic.key"     = "6d48d900c4eee01b47129d649f4481aaFFFFNRAL"
   }
