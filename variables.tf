@@ -14,6 +14,10 @@ variable "parameters" {
     "prod.expense.frontend.backend_endpoint" = "https://backend-prod.madhanmohanreddy.tech/"
     "prod.expense.frontend.app_version"      = "1.0.2"
     "prod.expense.backend.app_version"       = "1.0.2"
+
+
+    ## roboshop project
+    "dev.roboshop.docdb.endpoint"        =  "dev-roboshop-docdb.cluster-c9mm2yy6w31y.us-east-1.docdb.amazonaws.com"
   }
 }
 
