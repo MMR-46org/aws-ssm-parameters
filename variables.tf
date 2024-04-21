@@ -18,6 +18,7 @@ variable "parameters" {
 
     ## roboshop project
     "dev.roboshop.docdb.endpoint"        =  "dev-roboshop-docdb.cluster-c9mm2yy6w31y.us-east-1.docdb.amazonaws.com"
+    "dev.roboshop.catalogue.MONGO_URL"   =  "mongodb://username:password@dev-roboshop-docdb.cluster-c9mm2yy6w31y.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
   }
 }
 
