@@ -19,6 +19,8 @@ variable "parameters" {
     ## roboshop project
     "dev.roboshop.docdb.endpoint"        =  "dev-roboshop-docdb.cluster-c9mm2yy6w31y.us-east-1.docdb.amazonaws.com"
     "dev.roboshop.catalogue.MONGO_URL"   =  "mongodb://admin1:RoboShop12345@dev-roboshop-docdb.cluster-c9mm2yy6w31y.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
+    "dev.roboshop.user.MONGO_URL"   =  "mongodb://admin1:RoboShop12345@dev-roboshop-docdb.cluster-c9mm2yy6w31y.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
+    "dev.roboshop.user.REDIS_HOST"  =  "dev-roboshop-elasticache.bion65.0001.use1.cache.amazonaws.com:6379"
   }
 }
 
