@@ -20,12 +20,13 @@ variable "parameters" {
     "dev.roboshop.docdb.endpoint"        =  "dev-roboshop-docdb.cluster-c9mm2yy6w31y.us-east-1.docdb.amazonaws.com"
     "dev.roboshop.catalogue.MONGO_URL"   =  "mongodb://admin1:RoboShop12345@dev-roboshop-docdb.cluster-c9mm2yy6w31y.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
     "dev.roboshop.user.MONGO_URL"   =  "mongodb://admin1:RoboShop12345@dev-roboshop-docdb.cluster-c9mm2yy6w31y.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
-    "dev.roboshop.user.REDIS_HOST"  =  "dev-roboshop-elasticache.bion65.0001.use1.cache.amazonaws.com:6379"
-    "dev.roboshop.cart.REDIS_HOST"   = "dev-roboshop-elasticache.bion65.0001.use1.cache.amazonaws.com:6379"
+    "dev.roboshop.user.REDIS_HOST"  =  "dev-roboshop-elasticache.bion65.0001.use1.cache.amazonaws.com"
+    "dev.roboshop.cart.REDIS_HOST"   = "dev-roboshop-elasticache.bion65.0001.use1.cache.amazonaws.com"
     "dev.roboshop.cart.CATALOGUE_HOST" = "catalogue"
     "dev.roboshop.cart.CATALOGUE_PORT" = "80"
     "dev.roboshop.shipping.CART_ENDPOINT" = "cart"
     "dev.roboshop.shipping.DB_HOST"     =  "dev-mysql-rds.c9mm2yy6w31y.us-east-1.rds.amazonaws.com"
+    "dev.roboshop.rds.endpoint"         =  "dev-mysql-rds.c9mm2yy6w31y.us-east-1.rds.amazonaws.com"
   }
 }
 
