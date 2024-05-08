@@ -32,7 +32,7 @@ variable "parameters" {
     "dev.roboshop.payment.CART_PORT"   =  "80"
     "dev.roboshop.payment.USER_HOST"   =  "user"
     "dev.roboshop.payment.USER_PORT"   =  "80"
-    "dev.roboshop.payment.AMQP_HOST"   =  "rabbitmq-dev.madhanmohanreddyeeda.tech"
+    "dev.roboshop.payment.AMQP_HOST"   =  "rabbitmq-dev.madhanmohanreddy.tech"
     "dev.roboshop.payment.AMQP_USER"   =  "roboshop"
     "dev.roboshop.payment.AMQP_PASS"   =  "roboshop123"
   }
