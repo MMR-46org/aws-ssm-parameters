@@ -16,7 +16,7 @@ variable "parameters" {
     "prod.expense.backend.app_version"       = "1.0.2"
 
 
-    ## roboshop project
+    ## dev-roboshop project
     "dev.roboshop.docdb.endpoint"        =  "dev-roboshop-docdb.cluster-c9mm2yy6w31y.us-east-1.docdb.amazonaws.com"
     "dev.roboshop.catalogue.MONGO_URL"   =  "mongodb://admin1:RoboShop12345@dev-roboshop-docdb.cluster-c9mm2yy6w31y.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
     "dev.roboshop.user.MONGO_URL"   =  "mongodb://admin1:RoboShop12345@dev-roboshop-docdb.cluster-c9mm2yy6w31y.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
@@ -35,6 +35,26 @@ variable "parameters" {
     "dev.roboshop.payment.AMQP_HOST"   =  "rabbitmq-dev.madhanmohanreddy.tech"
     "dev.roboshop.payment.AMQP_USER"   =  "roboshop"
     "dev.roboshop.payment.AMQP_PASS"   =  "roboshop123"
+
+      ## prod roboshop project
+    "prod.roboshop.docdb.endpoint"        =  "prod-roboshop-docdb.cluster-c9mm2yy6w31y.us-east-1.docdb.amazonaws.com"
+    "prod.roboshop.catalogue.MONGO_URL"   =  "mongodb://admin1:RoboShop12345@prod-roboshop-docdb.cluster-c9mm2yy6w31y.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
+    "prod.roboshop.user.MONGO_URL"   =  "mongodb://admin1:RoboShop12345@prod-roboshop-docdb.cluster-c9mm2yy6w31y.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
+    "prod.roboshop.user.REDIS_HOST"  =  "prod-roboshop-elasticache.bion65.0001.use1.cache.amazonaws.com"
+    "prod.roboshop.cart.REDIS_HOST"   = "prod-roboshop-elasticache.bion65.0001.use1.cache.amazonaws.com"
+    "prod.roboshop.cart.CATALOGUE_HOST" = "catalogue"
+    "prod.roboshop.cart.CATALOGUE_PORT" = "80"
+    "prod.roboshop.shipping.CART_ENDPOINT" = "cart"
+    "prod.roboshop.shipping.DB_HOST"     =  "prod-mysql-rds.c9mm2yy6w31y.us-east-1.rds.amazonaws.com"
+    "prod.roboshop.rds.endpoint"         =  "prod-mysql-rds.c9mm2yy6w31y.us-east-1.rds.amazonaws.com"
+
+    "prod.roboshop.payment.CART_HOST"   =  "cart"
+    "prod.roboshop.payment.CART_PORT"   =  "80"
+    "prod.roboshop.payment.USER_HOST"   =  "user"
+    "prod.roboshop.payment.USER_PORT"   =  "80"
+    "prod.roboshop.payment.AMQP_HOST"   =  "rabbitmq-dev.madhanmohanreddy.tech"
+    "prod.roboshop.payment.AMQP_USER"   =  "roboshop"
+    "prod.roboshop.payment.AMQP_PASS"   =  "roboshop123"
   }
 }
 
@@ -66,6 +86,14 @@ variable "secrets"   {
     "dev.roboshop.docdb.password"    = "RoboShop12345"
     "dev.roboshop.rabbitmq.username" = "roboshop"
     "dev.roboshop.rabbitmq.password" = "roboshop123"
+
+
+    "prod.roboshop.rds.username"      = "admin1"
+    "prod.roboshop.rds.password"      = "RoboShop12345"
+    "prod.roboshop.docdb.username"    = "admin1"
+    "prod.roboshop.docdb.password"    = "RoboShop12345"
+    "prod.roboshop.rabbitmq.username" = "roboshop"
+    "prod.roboshop.rabbitmq.password" = "roboshop123"
   }
 }
 
